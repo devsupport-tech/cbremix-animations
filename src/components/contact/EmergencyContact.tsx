@@ -21,7 +21,7 @@ const EmergencyContact = () => {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-primary"
+            className="bg-orange border-orange text-white hover:bg-orange/90 hover:border-orange/90 hover:text-white"
             onClick={() => window.location.href = 'tel:+12818978022'}
           >
             Call Our Emergency Line
