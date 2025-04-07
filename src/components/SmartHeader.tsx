@@ -59,8 +59,7 @@ const SmartHeader = () => {
             </div>
             <Button 
               size="sm" 
-              variant="outline" 
-              className="text-xs h-8 border-white text-white hover:bg-white hover:text-primary"
+              className="text-xs h-8 bg-orange hover:bg-orange/90 text-white"
               onClick={() => window.location.href = '/contact'}
             >
               Free Estimate
