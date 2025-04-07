@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,12 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Change primary color to match the blue in the logo */
+    --primary: 210 100% 30%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    /* Set secondary color to the orange in the logo */
+    --secondary: 20 100% 50%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -43,10 +46,15 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
     
-    /* Navy blue colors */
-    --navy-blue: 215 50% 23%;
-    --navy-blue-light: 215 40% 30%;
-    --navy-blue-dark: 215 60% 16%;
+    /* Update navy colors to match the blue in the logo */
+    --navy-blue: 210 100% 30%;
+    --navy-blue-light: 210 90% 40%;
+    --navy-blue-dark: 210 100% 20%;
+    
+    /* Add orange colors from the logo */
+    --orange: 20 100% 50%;
+    --orange-light: 20 90% 60%;
+    --orange-dark: 20 100% 40%;
   }
 
   .dark {
@@ -59,10 +67,10 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 210 90% 40%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 20 90% 50%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;

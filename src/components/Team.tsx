@@ -87,8 +87,8 @@ const SuccessAreas = () => {
               variants={itemVariants}
               className="group"
             >
-              <div className="bg-navy/60 backdrop-blur-sm rounded-lg p-8 h-full flex flex-col hover:bg-navy-light/60 transition-colors duration-300 border border-white/10">
-                <div className="bg-navy-light/80 p-4 rounded-full w-fit mb-6">
+              <div className="bg-primary/60 backdrop-blur-sm rounded-lg p-8 h-full flex flex-col hover:bg-primary-light/60 transition-colors duration-300 border border-white/10">
+                <div className="bg-secondary/80 p-4 rounded-full w-fit mb-6">
                   {area.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">{area.title}</h3>

@@ -70,6 +70,11 @@ export default {
 					DEFAULT: 'hsl(var(--navy-blue))',
 					light: 'hsl(var(--navy-blue-light))',
 					dark: 'hsl(var(--navy-blue-dark))'
+				},
+				orange: {
+					DEFAULT: 'hsl(var(--orange))',
+					light: 'hsl(var(--orange-light))',
+					dark: 'hsl(var(--orange-dark))'
 				}
 			},
 			borderRadius: {

@@ -45,10 +45,19 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
+              className="flex items-center"
             >
-              <h1 className={`font-bold text-2xl ${isScrolled ? "text-primary" : "text-primary"}`}>
-                CBRS<span className="text-primary">Group</span>
-              </h1>
+              <img 
+                src="/lovable-uploads/6c410e36-5540-4b37-9199-b168d472fc1f.png" 
+                alt="Superior Restoration and Management Services Logo" 
+                className="h-14 w-14 mr-3"
+              />
+              <div>
+                <h1 className={`font-bold text-lg leading-tight ${isScrolled ? "text-primary" : "text-primary"}`}>
+                  Superior<span className="text-secondary"> Restoration</span>
+                </h1>
+                <p className="text-xs text-muted-foreground">Management Services</p>
+              </div>
             </motion.div>
           </Link>
 
@@ -80,7 +89,7 @@ const Navbar = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               <Button 
-                className="group"
+                className="group bg-secondary hover:bg-secondary/90 text-white"
                 onClick={() => window.location.href = '/contact'}
               >
                 Get Started
@@ -98,6 +107,13 @@ const Navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full sm:w-80">
+                <div className="flex justify-center mb-8 pt-6">
+                  <img 
+                    src="/lovable-uploads/6c410e36-5540-4b37-9199-b168d472fc1f.png" 
+                    alt="Superior Restoration Logo" 
+                    className="h-20 w-20"
+                  />
+                </div>
                 <nav className="flex flex-col gap-6 mt-12">
                   {navLinks.map((link, index) => (
                     <Link
@@ -109,7 +125,7 @@ const Navbar = () => {
                     </Link>
                   ))}
                   <Button 
-                    className="mt-4 group"
+                    className="mt-4 group bg-secondary hover:bg-secondary/90 text-white"
                     onClick={() => window.location.href = '/contact'}
                   >
                     Get Started

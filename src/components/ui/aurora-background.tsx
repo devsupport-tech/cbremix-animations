@@ -32,12 +32,12 @@ export function AuroraBackground({
   ];
 
   const colorClasses = [
-    "from-navy-light/30 to-navy/5", 
-    "from-navy/20 to-navy-light/5",
-    "from-navy-dark/20 to-navy/10",
-    "from-navy-light/30 to-navy/10",
-    "from-navy/20 to-navy-light/5",
-    "from-navy-dark/30 to-navy/5"
+    "from-primary-light/30 to-primary/5", 
+    "from-secondary/20 to-secondary-light/5",
+    "from-primary-dark/20 to-primary/10",
+    "from-primary-light/30 to-primary/10",
+    "from-secondary/20 to-secondary-light/5",
+    "from-primary-dark/30 to-primary/5"
   ];
 
   return (

@@ -45,11 +45,11 @@ const SmartHeader = () => {
               <span className="text-sm font-medium">555-123-4567</span>
             </a>
             <a 
-              href="mailto:info@cbrsgroup.com" 
+              href="mailto:info@superiorrestoration.com" 
               className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              <span className="text-sm font-medium">info@cbrsgroup.com</span>
+              <span className="text-sm font-medium">info@superiorrestoration.com</span>
             </a>
           </div>
           <div className="flex items-center gap-2">
@@ -59,8 +59,8 @@ const SmartHeader = () => {
             </div>
             <Button 
               size="sm" 
-              variant="secondary" 
-              className="text-xs h-8"
+              variant="outline" 
+              className="text-xs h-8 border-white text-white hover:bg-white hover:text-primary"
               onClick={() => window.location.href = '/contact'}
             >
               Free Estimate
