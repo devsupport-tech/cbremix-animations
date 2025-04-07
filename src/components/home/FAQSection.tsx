@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { QuestionMarkCircle } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -53,7 +53,7 @@ const FAQSection = () => {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center justify-center mb-4">
-            <QuestionMarkCircle className="h-8 w-8 text-primary mr-2" />
+            <HelpCircle className="h-8 w-8 text-primary mr-2" />
             <h2 className="text-4xl font-bold">Frequently Asked Questions</h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
