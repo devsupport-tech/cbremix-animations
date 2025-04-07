@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, ClipboardList, ClipboardCheck, Hammer, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -73,7 +72,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-muted">
@@ -204,7 +203,7 @@ const Services = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 };
