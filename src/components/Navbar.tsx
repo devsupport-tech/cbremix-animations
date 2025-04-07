@@ -34,9 +34,10 @@ const Navbar = () => {
     <header
       className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md py-3 shadow-sm top-0"
-          : "bg-transparent py-5 top-8"
+          ? "bg-white/90 backdrop-blur-md py-3 shadow-sm"
+          : "bg-transparent py-5"
       }`}
+      style={{ top: "var(--smart-header-height, var(--banner-height, 0px))" }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">

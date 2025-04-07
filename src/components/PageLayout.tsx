@@ -20,6 +20,7 @@ const PageLayout = ({
   // Weather alert message - in a real app, this would come from an API
   const weatherAlert = "Severe thunderstorm warning in effect for Houston area until 8:00 PM. Take necessary precautions.";
   const [bannerHeight, setBannerHeight] = useState<number>(0);
+  const [headerOffset, setHeaderOffset] = useState<number>(0);
 
   useEffect(() => {
     // Set CSS variable for banner height to use in other components
@@ -31,10 +32,18 @@ const PageLayout = ({
     }
   }, []);
 
+  useEffect(() => {
+    // Calculate the total offset needed for the main content
+    const smartHeaderHeight = showSmartHeader ? 
+      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--smart-header-height') || '0') : 0;
+    const navbarHeight = 80; // Approximation of navbar height
+    setHeaderOffset(bannerHeight + smartHeaderHeight + navbarHeight);
+  }, [bannerHeight, showSmartHeader]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <AlertBanner alertMessage={weatherAlert} />
-      <div style={{ paddingTop: `${bannerHeight}px` }}>
+      <div>
         {showSmartHeader && <SmartHeader />}
         <Navbar />
         <motion.main 
@@ -43,6 +52,7 @@ const PageLayout = ({
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           className={`flex-grow bg-background ${className}`}
+          style={{ paddingTop: `${headerOffset}px` }}
         >
           {children}
         </motion.main>

@@ -27,10 +27,19 @@ const SmartHeader = () => {
     };
   }, [lastScrollY]);
 
+  useEffect(() => {
+    // Set height of SmartHeader for other components to reference
+    const smartHeader = document.querySelector('.smart-header');
+    if (smartHeader) {
+      const height = smartHeader.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--smart-header-height', `${height}px`);
+    }
+  }, []);
+
   return (
     <div 
       className={cn(
-        "w-full bg-primary py-2 text-white transition-transform duration-300 sticky z-40",
+        "w-full bg-primary py-2 text-white transition-transform duration-300 sticky z-40 smart-header",
         !isVisible && "-translate-y-full"
       )}
       style={{ top: "var(--banner-height, 0px)" }}
