@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
@@ -35,8 +34,7 @@ const Contact = () => {
     setTimeout(() => {
       toast({
         title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
-        icon: <CheckCircle className="h-4 w-4" />
+        description: "We'll get back to you as soon as possible."
       });
       setIsSubmitting(false);
       setFormData({
