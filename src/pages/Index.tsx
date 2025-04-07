@@ -6,6 +6,7 @@ import ProcessSection from "@/components/home/ProcessSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import RecoveryPathSection from "@/components/home/RecoveryPathSection";
 import ClientsSection from "@/components/home/ClientsSection";
+import FAQSection from "@/components/home/FAQSection";
 import Projects from "@/components/Projects";
 import { Testimonial } from "@/components/Testimonial";
 import SuccessAreas from "@/components/Team";
@@ -37,6 +38,9 @@ const Index = () => {
 
       {/* Client Section */}
       <ClientsSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Testimonials */}
       <Testimonial 
