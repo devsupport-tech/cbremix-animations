@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmartHeader from "@/components/SmartHeader";
+import AlertBanner from "@/components/AlertBanner";
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -16,8 +17,12 @@ const PageLayout = ({
   className = "",
   showSmartHeader = true 
 }: PageLayoutProps) => {
+  // Weather alert message - in a real app, this would come from an API
+  const weatherAlert = "Severe thunderstorm warning in effect for Houston area until 8:00 PM. Take necessary precautions.";
+
   return (
     <div className="flex flex-col min-h-screen">
+      <AlertBanner alertMessage={weatherAlert} />
       {showSmartHeader && <SmartHeader />}
       <Navbar />
       <motion.main 
