@@ -50,13 +50,13 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "281-897-8022",
       action: "Call us"
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      details: "contact@cbrsgroup.com",
+      details: "contact@superiormgr.com",
       action: "Email us"
     },
     {

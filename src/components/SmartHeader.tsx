@@ -38,18 +38,18 @@ const SmartHeader = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <a 
-              href="tel:+15551234567" 
+              href="tel:+12818978022" 
               className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">555-123-4567</span>
+              <span className="text-sm font-medium">281-897-8022</span>
             </a>
             <a 
-              href="mailto:info@superiorrestoration.com" 
+              href="mailto:info@superiormgr.com" 
               className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              <span className="text-sm font-medium">info@superiorrestoration.com</span>
+              <span className="text-sm font-medium">info@superiormgr.com</span>
             </a>
           </div>
           <div className="flex items-center gap-2">
