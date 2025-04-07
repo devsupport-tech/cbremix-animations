@@ -20,7 +20,7 @@ const AlertBanner = ({
   if (!isVisible) return null;
 
   return (
-    <div className="w-full bg-orange">
+    <div className="w-full bg-orange fixed top-0 left-0 z-50">
       <div className="container mx-auto px-4 py-2">
         <Alert 
           variant={variant} 

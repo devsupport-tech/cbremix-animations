@@ -30,9 +30,10 @@ const SmartHeader = () => {
   return (
     <div 
       className={cn(
-        "w-full bg-primary py-2 text-white transition-transform duration-300 z-50",
+        "w-full bg-primary py-2 text-white transition-transform duration-300 sticky z-40",
         !isVisible && "-translate-y-full"
       )}
+      style={{ top: "var(--banner-height, 0px)" }}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
