@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
@@ -124,7 +125,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold mb-2">Office</h3>
                   <p className="text-muted-foreground">Visit our headquarters</p>
                   <address className="mt-3 font-medium text-primary not-italic">
-                    123 Restoration Ave<br />Houston, TX 77002
+                    Houston and Surrounding Areas
                   </address>
                 </CardContent>
               </Card>
