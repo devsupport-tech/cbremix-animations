@@ -2,9 +2,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import ProjectsComponent from "@/components/Projects"; // Using the existing Projects component
+import PageLayout from "@/components/PageLayout";
+import ProjectsComponent from "@/components/Projects";
 
 const Projects = () => {
   const fadeInUp = {
@@ -17,9 +16,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      
+    <PageLayout>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-muted">
         <div className="container mx-auto px-4">
@@ -124,9 +121,7 @@ const Projects = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 
