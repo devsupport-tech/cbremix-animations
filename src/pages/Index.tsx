@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ClipboardCheck, ShieldCheck, Hammer, Home, ClipboardList, Users, ChevronDown } from "lucide-react";
@@ -275,7 +276,7 @@ const Index = () => {
             >
               <h2 className="text-4xl font-bold mb-4">Your path to recovery</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                CBRS Group is committed to making the restoration process as smooth as possible, advocating for you every step of the way to ensure fair treatment from insurance companies.
+                Superior Restoration and Management Services is committed to making the restoration process as smooth as possible, advocating for you every step of the way to ensure fair treatment from insurance companies.
               </p>
               <Button className="group">
                 Our Approach
@@ -353,7 +354,7 @@ const Index = () => {
 
       {/* Testimonials */}
       <Testimonial 
-        quote="After a devastating fire damaged our home, CBRS Group handled everything with our insurance company. They identified items missed in the initial estimate and increased our settlement by over 40%. Their team managed the entire rebuilding process expertly."
+        quote="After a devastating fire damaged our home, Superior Restoration and Management Services handled everything with our insurance company. They identified items missed in the initial estimate and increased our settlement by over 40%. Their team managed the entire rebuilding process expertly."
         author="Michael Thompson"
         title="Homeowner"
       />
