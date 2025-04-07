@@ -19,12 +19,12 @@ const ServicesCTA = () => {
             Contact us today for a consultation and let our experts guide you through the insurance claims process.
           </p>
           <div className="flex justify-center items-center mb-8">
-            <Phone className="h-5 w-5 text-primary mr-2" />
+            <Phone className="h-5 w-5 text-orange mr-2" />
             <span className="text-lg font-medium">Call us at 281-897-8022</span>
           </div>
           <Button 
             size="lg" 
-            className="group text-base"
+            className="group text-base bg-orange hover:bg-orange/90 text-white"
             onClick={() => window.location.href = '/contact'}
           >
             Contact Us
