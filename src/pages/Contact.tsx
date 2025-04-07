@@ -1,12 +1,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import PageLayout from "@/components/PageLayout";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -49,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <PageLayout>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-muted">
         <div className="container mx-auto px-4">
@@ -303,7 +304,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+    </PageLayout>
   );
 };
 

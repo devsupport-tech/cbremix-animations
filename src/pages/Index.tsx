@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import PageLayout from "@/components/PageLayout";
 import HeroSection from "@/components/home/HeroSection";
 import StatsSection from "@/components/home/StatsSection";
 import ProcessSection from "@/components/home/ProcessSection";
@@ -10,11 +10,10 @@ import FAQSection from "@/components/home/FAQSection";
 import Projects from "@/components/Projects";
 import { Testimonial } from "@/components/Testimonial";
 import SuccessAreas from "@/components/Team";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <PageLayout>
       {/* Hero Section */}
       <HeroSection />
 
@@ -48,7 +47,7 @@ const Index = () => {
         author="Michael Thompson"
         title="Homeowner"
       />
-    </div>
+    </PageLayout>
   );
 };
 

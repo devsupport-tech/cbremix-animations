@@ -1,11 +1,11 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import PageLayout from "@/components/PageLayout";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <PageLayout>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-muted">
         <div className="container mx-auto px-4">
@@ -199,7 +199,7 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+    </PageLayout>
   );
 };
 
